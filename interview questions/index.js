@@ -194,7 +194,18 @@
 // console.timeEnd()
 
 
-
-
-
-
+//CURRYING IN JAVASCRIPT
+//1.problem statement
+// function sum(a){
+// return function (b){
+//     return function (c){
+//         return a+b+c
+//     }
+// }
+// }
+// let out=sum(1)
+// let out1=out(2)
+// console.log(out1(3))
+//2. SOLUTION WITH THE HELP OF CURRYING
+// let out=sum(1)(2)(3)
+// console.log(out)

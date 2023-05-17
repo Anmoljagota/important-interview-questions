@@ -9,3 +9,4 @@
 10.who the code is execute in js
 11.Higher order functions in js
 12.Memoization in js
+13.currying in js
