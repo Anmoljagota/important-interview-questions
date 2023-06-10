@@ -1,0 +1,13 @@
+1.question: what is a call and how it work
+2.question:what is a apply and what is the difference between cal and apply
+3.question:what is a bind the what is the difference between call and bind
+4.what is a hosting in javascript
+6.what is a closures in js
+7. what is a Promises
+8. what is a async/await in js
+9.who event loop work in js
+10.who the code is execute in js
+11.Higher order functions in js
+12.Memoization in js
+13.currying in js
+14.Strict mode in js
