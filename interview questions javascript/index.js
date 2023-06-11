@@ -224,16 +224,36 @@
 // console.log(i)
 
 //MY OWN MAP FUNCTION USING PROTOTYPE
+// let arr=[1,2,3,4,5]
+// Array.prototype.MyMap=function(callback){
+//     let temp=[]
+//     for(let i=0;i<this.length;i++){
+//         temp.push(callback(this[i],i,this))
+//     }
+//     return temp
+// }
+
+// let newrr=arr.MyMap((ele,i,arr)=>{
+//     return ele>2
+// })
+// console.log(newrr)
+
+
+//MY FILTER FUNCTION
 let arr=[1,2,3,4,5]
-Array.prototype.MyMap=function(callback){
+Array.prototype.MyFilter=function(callback){
     let temp=[]
     for(let i=0;i<this.length;i++){
-        temp.push(callback(this[i],i,this))
+        if(callback(this[i],i,this)) {
+            temp.push(this[i])
+        }
     }
     return temp
 }
 
-let newrr=arr.MyMap((ele,i,arr)=>{
-    return ele>2
+
+
+let newarr=arr.MyFilter((ele,i,arr)=>{
+    return ele>1
 })
-console.log(newrr)
+console.log(newarr)
