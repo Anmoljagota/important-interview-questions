@@ -240,20 +240,20 @@
 
 
 //MY FILTER FUNCTION
-let arr=[1,2,3,4,5]
-Array.prototype.MyFilter=function(callback){
-    let temp=[]
-    for(let i=0;i<this.length;i++){
-        if(callback(this[i],i,this)) {
-            temp.push(this[i])
-        }
-    }
-    return temp
-}
+// let arr=[1,2,3,4,5]
+// Array.prototype.MyFilter=function(callback){
+//     let temp=[]
+//     for(let i=0;i<this.length;i++){
+//         if(callback(this[i],i,this)) {
+//             temp.push(this[i])
+//         }
+//     }
+//     return temp
+// }
 
 
 
-let newarr=arr.MyFilter((ele,i,arr)=>{
-    return ele>1
-})
-console.log(newarr)
+// let newarr=arr.MyFilter((ele,i,arr)=>{
+//     return ele>1
+// })
+// console.log(newarr)

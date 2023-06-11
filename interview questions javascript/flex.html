@@ -1,68 +1,69 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>flex properties</title>
     <style>
-        *{
-            margin: 0px;
-            padding: 0px;
-        }
-        #container{
-            display: flex;
-            /* justify-content: space-between;
+      * {
+        margin: 0px;
+        padding: 0px;
+      }
+      #container {
+        display: flex;
+        /* justify-content: space-between;
             align-items: center; */
-           flex-wrap: wrap;
-        }
-        #container>div{
-            /* width:20%; */
-            /* height: 20vh; */
-text-align: center;
-        }
-        #container>div:nth-child(1){
-            background-color: red;
-        }
-        #container>div:nth-child(2){
-            background-color: blue;
-        }
-        #container>div:nth-child(3){
-            background-color: green;
-        }
-        #container>div:nth-child(4){
-            background-color: yellow;
-        }
-        div::after{
+        flex-wrap: wrap;
+        gap: 100px;
+      }
+      #container > div {
+        /* width:20%; */
+        /* height: 20vh; */
+        text-align: center;
+        width: 15%;
+        height: 150px;
+      }
+      #container > div:nth-child(1) {
+        background-color: red;
+        margin-left: 100px;
+      }
+      #container > div:nth-child(2) {
+        background-color: blue;
+      }
+      #container > div:nth-child(3) {
+        background-color: green;
+      }
+      #container > div:nth-child(4) {
+        background-color: yellow;
+      }
+      /* div::after{
             content: "School";
+        } */
+        .items1{
+            transform: translate(100%,20%);
         }
-
-
     </style>
-</head>
-<body>
-    <video controls height="500px" width="500px" autoplay>
-        <source src="./Anmol.mp4" type="video/mp4">
-    </video>
-    <!-- <div id="container">
-        <div>1</div>
-        <div>2</div>
-        <div>3</div>
-        <div>4</div>
-    </div> -->
-    <!-- <div>
-        masai
-    </div> -->
-    <!-- <div>hlo</div> -->
-  <script>
-    // fun()
-    // console.log(a)
-    // function fun(){
-    //     console.log("hiii")
-    // }
-    // var a=10;
-    
-
-  </script>
-</body>
+  </head>
+  <body>
+    <div id="container">
+      <div class="items">1</div>
+      <div class="items">2</div>
+      <div class="items">3</div>
+    </div>
+    <br />
+    <div id="container">
+      <div class="items1">1</div>
+      <div class="items2">2</div>
+      <div class="items3">3</div>
+    </div>
+    <script>
+      // fun()
+      // console.log(a)
+      // function fun(){
+      //     console.log("hiii")
+      // }
+      // var a=10;
+    </script>
+  </body>
 </html>

@@ -11,3 +11,4 @@
 12.Memoization in js
 13.currying in js
 14.Strict mode in js
+15. difference between margin and translate in css
