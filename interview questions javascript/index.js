@@ -263,3 +263,9 @@
 // let arr=[1,2,3,4,5,6,7,8,9]
 // arr.fill("p")
 // console.log(arr)
+
+
+//set
+// let arr=["anmol","tanya","anmol","ankush","parsant","parsant","rakul"]
+// let newarr=new Set(arr)
+// console.log(newarr)
