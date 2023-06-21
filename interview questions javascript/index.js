@@ -10,7 +10,7 @@
 
 // let f=new String("foo")
 // let c=new String("foo")
-// console.log(f==="foo")
+// // console.log(f==="foo")
 // console.log(c===f)
 // let x=10;
 // let y=(x++,x+5)
@@ -53,6 +53,7 @@
 // }
 // var k=obj.foo
 // k()
+
 
 // function k(){
 //     console.log(this.a)
@@ -257,3 +258,8 @@
 //     return ele>1
 // })
 // console.log(newarr)
+
+//fill in javascript
+// let arr=[1,2,3,4,5,6,7,8,9]
+// arr.fill("p")
+// console.log(arr)

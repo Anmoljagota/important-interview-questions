@@ -24,14 +24,14 @@
         width: 15%;
         height: 150px;
       }
-      #container > div:nth-child(1) {
+      #flex_container > div:nth-child(1) {
         background-color: red;
-        margin-left: 100px;
+        /* margin-left: 100px; */
       }
-      #container > div:nth-child(2) {
+      #flex_container > div:nth-child(2) {
         background-color: blue;
       }
-      #container > div:nth-child(3) {
+      #flex_container > div:nth-child(3) {
         background-color: green;
       }
       #container > div:nth-child(4) {
@@ -43,10 +43,41 @@
         .items1{
             transform: translate(100%,20%);
         }
+        /* unvisited link */
+a:link {
+  color: #FF0000;
+}
+
+/* visited link */
+a:visited {
+  color: #00FF00;
+}
+
+/* mouse over link */
+a:hover {
+  color: #FF00FF;
+}
+
+/* selected link */
+a:active {
+  color: #0000FF;
+}
+#flex_container{
+  display: flex;
+  gap: 40px;
+  /* flex-direction: row-reverse; */
+ flex-wrap: wrap;
+ justify-content: flex-start;
+}
+#flex_container>div{
+  width: 30%;
+  height: 100px;
+}
     </style>
   </head>
   <body>
-    <div id="container">
+     <!-- differnce between translate and margin in css  -->
+    <!-- <div id="container">
       <div class="items">1</div>
       <div class="items">2</div>
       <div class="items">3</div>
@@ -56,7 +87,21 @@
       <div class="items1">1</div>
       <div class="items2">2</div>
       <div class="items3">3</div>
-    </div>
+    </div> -->
+
+
+    <!-- Pseudo-class in css -->
+    <!-- <a href="www.youtube.com">GO TO YOUTUBE</a> -->
+
+
+    <!-- Flex Properties in css -->
+    <!-- <div id="flex_container">
+      <div>1</div>
+      <div>2</div>
+      <div>3</div>
+    </div> -->
+
+    
     <script>
       // fun()
       // console.log(a)
@@ -64,6 +109,28 @@
       //     console.log("hiii")
       // }
       // var a=10;
+//       var a=10;
+// var obj={
+//     a:20,
+//     foo:function(){
+//         console.log(this.a)
+//     }
+// }
+// var k=obj.foo
+// k()
+
+
+// var obj = {
+//   prop: 42,
+//   fun: function () {
+//     console.log(this.prop);
+//   },
+// };
+// var foo = obj.fun;
+// var prop = 20;
+// foo();
+
+
     </script>
   </body>
 </html>
