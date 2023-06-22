@@ -1,0 +1,20 @@
+1Q=>what is a custom hooks 
+2Q=>what is a Debouncing
+3Q=>what is a diffing algoritm in react
+3Ans=>A diffing algoritm refers to a process in which react updating a user interfacing by comparing the old virtual representation with a new virtual
+representation .  if it finds any changes then only that part will render on the dom and other things still be same . this process is called 
+a Reconciliation.
+In a Reconciliation there is alot of node consist contaning props , attributes , state .   
+
+4Q=>what is a redux
+ANS=>A Redux is a open source javascript library which works with a framework like react and angular for managing a state of an application.
+it provides a predictable container and principals to manage the state in a more simple , efficient and easy to understand manner . in a core
+redux flow a undirectional flow of data which means that a data always flow in a one direction because of this it is very easy to understood 
+how the state is manages . there is a one javascript object which store all the state called a STORE and according to this store ui will update
+there is a three main concepts in redux
+1.Action=>Action is a javascript object that contains a two things one is type which define the type of an action and second is payload
+which contains and extra information about the data . and this payload is a optional . this action will dispatch to the reducer with the help
+of a dispacher .
+2.REDUCER=>Reducer is a pure function that contains a initial state and action which is comming from a action . and according to this action type 
+reducer change the state and pass to the store 
+3.STORE=>store contains all the state and according to the updation made by a reducer it will change the ui
