@@ -54,7 +54,6 @@
 // var k=obj.foo
 // k()
 
-
 // function k(){
 //     console.log(this.a)
 // }
@@ -208,7 +207,6 @@
 // let out=sum(1)(2)(3)
 // console.log(out)
 
-
 //iterator in javascript
 // const iterable = [1, 2, 3];
 // const iterator = iterable[Symbol.iterator]();
@@ -239,7 +237,6 @@
 // })
 // console.log(newrr)
 
-
 //MY FILTER FUNCTION
 // let arr=[1,2,3,4,5]
 // Array.prototype.MyFilter=function(callback){
@@ -252,8 +249,6 @@
 //     return temp
 // }
 
-
-
 // let newarr=arr.MyFilter((ele,i,arr)=>{
 //     return ele>1
 // })
@@ -264,8 +259,40 @@
 // arr.fill("p")
 // console.log(arr)
 
-
 //set
 // let arr=["anmol","tanya","anmol","ankush","parsant","parsant","rakul"]
 // let newarr=new Set(arr)
 // console.log(newarr)
+
+//INFINITE CURRYING IN JAVASCRIPT
+// function curry(a) {
+//   return function (b) {
+//     if (b) {
+//       return curry(a + b);
+//     }
+//     return a;
+//   };
+// }
+
+// console.log(curry(10)(5)(6));
+
+
+//CHANING 
+const cal={
+ total:0,
+    sum(a){
+this.total+=a
+return this
+    },
+sub(a){
+    this.total-=a
+    return this
+},
+div(a){
+    this.total/=a
+    return this
+}
+}
+
+const p=cal.sum(10).sub(5).div(2)
+console.log(p.total)
