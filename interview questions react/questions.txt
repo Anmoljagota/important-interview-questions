@@ -9,7 +9,7 @@ In a Reconciliation there is alot of node consist contaning props , attributes ,
 4Q=>what is a redux
 ANS=>A Redux is a open source javascript library which works with a framework like react and angular for managing a state of an application.
 it provides a predictable container and principals to manage the state in a more simple , efficient and easy to understand manner . in a core
-redux flow a undirectional flow of data which means that a data always flow in a one direction because of this it is very easy to understood 
+redux is a undirectional flow of data which means that a data always flow in a one direction because of this it is very easy to understood 
 how the state is manages . there is a one javascript object which store all the state called a STORE and according to this store ui will update
 there is a three main concepts in redux
 1.Action=>Action is a javascript object that contains a two things one is type which define the type of an action and second is payload

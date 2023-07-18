@@ -40,14 +40,18 @@
 // var x=5;
 // foo()
 
-var x=10;
-function outer(){
-    var x=5;
-   function inner(){
-    console.log(x)
-   }
-   return inner
-}
+// var x=10;
+// function outer(){
+//     var x=5;
+//    function inner(){
+//     console.log(x)
+//    }
+//    return inner
+// }
 
-var foo=outer()
-foo()
+// var foo=outer()
+// foo()
+
+
+
+

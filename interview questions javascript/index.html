@@ -130,7 +130,14 @@ a:active {
 // var prop = 20;
 // foo();
 
-
+function outer(){
+  var a=10;
+  function inner(){
+    console.log(a)
+  }
+  return inner
+}
+outer()()
     </script>
   </body>
 </html>

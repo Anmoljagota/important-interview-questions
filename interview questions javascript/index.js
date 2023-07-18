@@ -276,23 +276,128 @@
 
 // console.log(curry(10)(5)(6));
 
+//CHANING
+// const cal={
+//  total:0,
+//     sum(a){
+// this.total+=a
+// return this
+//     },
+// sub(a){
+//     this.total-=a
+//     return this
+// },
+// div(a){
+//     this.total/=a
+//     return this
+// }
+// }
 
-//CHANING 
-const cal={
- total:0,
-    sum(a){
-this.total+=a
-return this
-    },
-sub(a){
-    this.total-=a
-    return this
-},
-div(a){
-    this.total/=a
-    return this
-}
-}
+// const p=cal.sum(10).sub(5).div(2)
+// console.log(p.total)
 
-const p=cal.sum(10).sub(5).div(2)
-console.log(p.total)
+//NULL VS UNDEFINED
+
+// let arr = [1, 2, 3, 4, 5];
+// const newarr = arr.map((ele) => {
+//   return ele > 2;
+// });
+// const filterarr = arr.filter((ele) => {
+//   return ele > 2;
+// });
+// console.log(newarr)
+// console.log(filterarr)
+
+//closures Again
+// function outer(){
+//     var a=10;
+//     function inner(){
+//         let sum=a+20;
+//         console.log(sum)
+//     }
+//     return inner
+// }
+// outer()()
+
+// for(var i=0;i<5;i++){
+//     function changereference(i){
+//         setTimeout(function(){
+//             console.log(i)
+//         },i*1000)
+//     }
+// changereference(i)
+// }
+//5
+//5 times 5
+//output
+//iterating
+//settimeout
+//call satck
+//reference
+//output
+
+// console.log("Start");
+
+// // Asynchronous function with a callback
+// function asyncOperation(callback) {
+//   setTimeout(function () {
+//     console.log("Asynchronous operation complete");
+//     callback();
+//   }, 2000); // Simulating a delay of 2 seconds
+// }
+
+// asyncOperation(function () {
+//   console.log("Callback function executed");
+// });
+
+// console.log("End");
+
+//DIFFERENT WAY TO CREATE A OBJECT IN JS
+//1 OBJECT LITERAL
+
+// const obj={
+//     name:"anmol",
+//     role:"developer",
+//     salary:"not mentioned"
+//     }
+//     console.log(obj)
+
+//2 CONSTRUCTOR
+// const obj=new Object()
+// obj.name="anmol";
+// obj.role="developer";
+// obj.saary="not mentioned"
+// console.log(obj)
+
+//3 OBJECT METHOD
+// const personprototype = {
+//   great: function () {
+//     console.log(`My Name is ${this.name}`);
+//   },
+// };
+
+// const person = Object.create(personprototype);
+// person.name = "anmol";
+// console.log(person);
+// person.great();
+
+//4 CONSTRUCTOR FUNCTION
+// function Createobject(name,role,salary){
+//     this.name=name;
+//     this.role=role;
+//     this.salary=salary;
+// }
+
+// const newobj=new Createobject("anmol","developer","not mentioned")
+// console.log(newobj)
+
+//5 WITH THE help of classes
+// class createobj{
+//     constructor(name,role,salary){
+//         this.name=name;
+//         this.role=role;
+//         this.salary=salary
+//     }
+// }
+// const person=new createobj("anmol","developer","not mentioned")
+// console.log(person)

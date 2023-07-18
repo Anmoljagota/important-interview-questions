@@ -13,3 +13,35 @@
 14.Strict mode in js
 15. difference between margin and translate in css
 16. Why do we use pseudo-class?
+
+1q=>what is a javascript
+ans=>introduction => Javascript is a scripting programming language which is primilarly use to create interactive , dynamic and complex elements on web 
+pages . it is developed by a breadon eich at netscape commumnication in mid 1990's . it is a brain of a web pages . 
+for example => when we click on button in websites some dialog box alert box is appeard on the page something happened when we click on
+something . most of the functionality and logic which is implement on the pages are built by a js.
+popularity=>jvascript is flexible and most widely used language . before introduced the node js in the market javascript is quite famous 
+but not that much nowdays before node js javascript is client side language and only used as a frontend but after introdued the node js 
+it gave the flexibility to use js outside the browser and as a server side scripting language .
+
+uses=> framework and library that is built in the top of js like react angular and vue makes the js more interseting and with the help of
+this we can make a more user friendly ui . 
+
+2q=>what is a Promises
+ans=>Promises is a object that represent the eventual completion of a asyc task which may happening or happen in the future .
+A javascript is a single threaded language and it will not stop even the some code taking time but with the help of Promise
+we can easily handle the asyc operation in a more better way .
+
+ A promise can be a three states
+ 1.)pending => The promise are still in the processing state 
+ 2.) fullfilled => A promise resolved
+ 3.) Rejected =>   A promise rejected
+
+for example=> Assume that there is one ecomerce website what happened in the ecommerce website first user add the items in the cart 
+then user do the procced the payment and then payment successfull
+we need to do this all the things in a order manner means always first user add into the cart then proced to payment and then payment 
+successfull . any point of time it can't we happened like payment execute first and then add to cart happened this thing we can do with the 
+help of a promises;
+ A promise come with the alot of benefits like =>
+ 1)inversion of control => in the callback function it might happened then function run two or three time even not run but in the 
+ promise everything in developers hand 
+ 2)callback hell problem solved 
