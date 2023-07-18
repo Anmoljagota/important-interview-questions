@@ -401,3 +401,34 @@
 // }
 // const person=new createobj("anmol","developer","not mentioned")
 // console.log(person)
+
+//CALL , APPLY , BIND IN JS
+
+// function watertap(state) {
+//   console.log(
+//     `Name of the person is ${this.name} and room number is ${this.room} and state is ${state}`
+//   );
+// }
+
+// let person1 = {
+//   name: "anmol",
+//   room: 25,
+// };
+// let person2 = {
+//   name: "tanya",
+//   room: 70,
+// };
+// person1store=watertap.bind(person1,"delhi");
+// person2store=watertap.bind(person2,"punjab");
+// person1store()
+
+
+//slice in js
+// let arr=[1,2,3,4,5]
+// let newarr=arr.slice(2,4)
+// console.log(newarr)
+
+//splice in js
+// let arr=[1,2,3,4,5]
+// arr.splice(1,1,6,7)
+// console.log(arr)

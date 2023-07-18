@@ -45,3 +45,50 @@ help of a promises;
  1)inversion of control => in the callback function it might happened then function run two or three time even not run but in the 
  promise everything in developers hand 
  2)callback hell problem solved 
+
+ 3q=>what is a call .
+ ans=>Call is a javascript built in function that allow to call a function with a specife this keyword and according to the argument 
+ provided . it is a powerfull feature that change the context like the refernce of the this to those object where call method is set .
+
+ 4q=>what is a apply
+ ans=>apply is same like a call it also call a function with specific this keyword but difference only lies in between a argument 
+ we can provide a argument in apply as a array of elements but not in call
+
+5q=> what is a bind 
+ans=> bind bassically store the function and we can invoke that function later point of time . in the call and apply when function is call 
+then it immadiately invoked so we do't have a control of execution of function but in bind we have a control on function.
+
+6Q=>what is a JSON
+ans=>JSON is javascript object notation which has a text based data format following the object syntax . it is litewait and widely used
+to transfer the data over the internet because of it lightwait it consume a less bandwidth . ans also to store the data JSON is widely used
+to communicate between the api JSON is widely used by th edevelopers.
+
+7q=>Arrow function in js
+ans=>Arrow function is concise syntax for creating function . it is introduced in ECMASCRIPT(6) es6 to write a function in shorter cleaner 
+way . in a trandition function it is neccesary to write a return if we are returning from the function but in arrow function we don't need 
+to wrire a return statement
+Arrow function has its own features
+1.) Arrpw function has not bind its own this value it get the this from its legixal scope value 
+2.)because of not this in arrow function concept of call,apply and bind in arrow function is difficult to implement
+3.)we can not use a constructors in arrow function .
+
+8q=>What is the Temporal Dead Zone
+ans=>The Temporal Dead Zone is a behavior in JavaScript that occurs when declaring a variable with the let and const keywords, but not with var. In ECMAScript 6, accessing a let or const variable before its declaration (within its scope) causes a ReferenceError. The time span when that happens, between the creation of a variable’s binding and its declaration, is called the temporal dead zone.
+
+Let's see this behavior with an example,
+
+function somemethod() {
+  console.log(counter1); // undefined
+  console.log(counter2); // ReferenceError
+  var counter1 = 1;
+  let counter2 = 2;
+}
+
+9q=>How do you decode or encode a URL in JavaScript?
+ans=>encodeURI() function is used to encode an URL. This function requires a URL string as a parameter and return that encoded string. decodeURI() function is used to decode an URL. This function requires an encoded URL string as parameter and return that decoded string.
+
+Note: If you want to encode characters such as / ? : @ & = + $ # then you need to use encodeURIComponent().
+
+let uri = "employeeDetails?name=john&occupation=manager";
+let encoded_uri = encodeURI(uri);
+let decoded_uri = decodeURI(encoded_uri);
