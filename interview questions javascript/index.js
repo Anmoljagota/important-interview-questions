@@ -432,3 +432,31 @@
 // let arr=[1,2,3,4,5]
 // arr.splice(1,1,6,7)
 // console.log(arr)
+
+
+//MEMOIZATION IN JS
+// const memoization_function=()=>{
+//     let catche={}
+//     return (value)=>{
+// if(value in catche){
+//     console.log("taking from catche")
+//     return catche[value]
+// }
+// else{
+//     console.log("calculating result");
+//     let newresult=value+20
+  
+//     catche[value]=newresult
+//     return newresult
+// }
+//     }
+// }
+// const value=memoization_function()
+
+// console.log(value(20))
+
+
+// let x=[1,2,3]
+// let y=x.join("-")
+// let z=y.replaceAll("-","")
+// console.log(z)

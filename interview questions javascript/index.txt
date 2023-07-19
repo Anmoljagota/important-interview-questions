@@ -92,3 +92,51 @@ Note: If you want to encode characters such as / ? : @ & = + $ # then you need t
 let uri = "employeeDetails?name=john&occupation=manager";
 let encoded_uri = encodeURI(uri);
 let decoded_uri = decodeURI(encoded_uri);
+
+10q=>What is memoization
+ans=>Memoization is a programming technique which attempts to increase a function’s performance by caching its previously computed results. Each time a memoized function is called, its parameters are used to index the cache. If the data is present, then it can be returned, without executing the entire function. Otherwise the function is executed and then the result is added to the cache. Let's take an example of adding function with memoization,
+
+const memoizAddition = () => {
+  let cache = {};
+  return (value) => {
+    if (value in cache) {
+      console.log("Fetching from cache");
+      return cache[value]; // Here, cache.value cannot be used as property name starts with the number which is not a valid JavaScript  identifier. Hence, can only be accessed using the square bracket notation.
+    } else {
+      console.log("Calculating result");
+      let result = value + 20;
+      cache[value] = result;
+      return result;
+    }
+  };
+};
+// returned function from memoizAddition
+const addition = memoizAddition();
+console.log(addition(20)); //output: 40 calculated
+console.log(addition(20)); //output: 40 cached
+
+
+10q=>What are server-sent events
+ans=>Server-sent events (SSE) is a server push technology enabling a browser to receive automatic updates from a server via HTTP
+ connection without resorting to polling. These are a one way communications channel - events flow from server to client only. 
+ This has been used in Facebook/Twitter updates, stock price updates, news feeds etc.
+
+ 11q=>How do you receive server-sent event notifications
+ans=>The EventSource object is used to receive server-sent event notifications. For example, you can receive messages from server as below,
+
+if (typeof EventSource !== "undefined") {
+  var source = new EventSource("sse_generator.js");
+  source.onmessage = function (event) {
+    document.getElementById("output").innerHTML += event.data + "<br>";
+  };
+}
+⬆ Back to Top
+
+11q=>How do you check browser support for server-sent events
+ans=>You can perform browser support for server-sent events before using it as below,
+
+if (typeof EventSource !== "undefined") {
+  // Server-sent events supported. Let's have some code here!
+} else {
+  // No server-sent events supported
+}

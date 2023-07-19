@@ -40,43 +40,43 @@
       /* div::after{
             content: "School";
         } */
-        .items1{
-            transform: translate(100%,20%);
-        }
-        /* unvisited link */
-a:link {
-  color: #FF0000;
-}
+      .items1 {
+        transform: translate(100%, 20%);
+      }
+      /* unvisited link */
+      a:link {
+        color: #ff0000;
+      }
 
-/* visited link */
-a:visited {
-  color: #00FF00;
-}
+      /* visited link */
+      a:visited {
+        color: #00ff00;
+      }
 
-/* mouse over link */
-a:hover {
-  color: #FF00FF;
-}
+      /* mouse over link */
+      a:hover {
+        color: #ff00ff;
+      }
 
-/* selected link */
-a:active {
-  color: #0000FF;
-}
-#flex_container{
-  display: flex;
-  gap: 40px;
-  /* flex-direction: row-reverse; */
- flex-wrap: wrap;
- justify-content: flex-start;
-}
-#flex_container>div{
-  width: 30%;
-  height: 100px;
-}
+      /* selected link */
+      a:active {
+        color: #0000ff;
+      }
+      #flex_container {
+        display: flex;
+        gap: 40px;
+        /* flex-direction: row-reverse; */
+        flex-wrap: wrap;
+        justify-content: flex-start;
+      }
+      #flex_container > div {
+        width: 30%;
+        height: 100px;
+      }
     </style>
   </head>
   <body>
-     <!-- differnce between translate and margin in css  -->
+    <!-- differnce between translate and margin in css  -->
     <!-- <div id="container">
       <div class="items">1</div>
       <div class="items">2</div>
@@ -89,10 +89,8 @@ a:active {
       <div class="items3">3</div>
     </div> -->
 
-
     <!-- Pseudo-class in css -->
     <!-- <a href="www.youtube.com">GO TO YOUTUBE</a> -->
-
 
     <!-- Flex Properties in css -->
     <!-- <div id="flex_container">
@@ -101,7 +99,6 @@ a:active {
       <div>3</div>
     </div> -->
 
-    
     <script>
       // fun()
       // console.log(a)
@@ -109,35 +106,48 @@ a:active {
       //     console.log("hiii")
       // }
       // var a=10;
-//       var a=10;
-// var obj={
-//     a:20,
-//     foo:function(){
-//         console.log(this.a)
-//     }
-// }
-// var k=obj.foo
-// k()
+      //       var a=10;
+      // var obj={
+      //     a:20,
+      //     foo:function(){
+      //         console.log(this.a)
+      //     }
+      // }
+      // var k=obj.foo
+      // k()
 
+      // var obj = {
+      //   prop: 42,
+      //   fun: function () {
+      //     console.log(this.prop);
+      //   },
+      // };
+      // var foo = obj.fun;
+      // var prop = 20;
+      // foo();
 
-// var obj = {
-//   prop: 42,
-//   fun: function () {
-//     console.log(this.prop);
-//   },
-// };
-// var foo = obj.fun;
-// var prop = 20;
-// foo();
+      // function outer(){
+      //   var a=10;
+      //   function inner(){
+      //     console.log(a)
+      //   }
+      //   return inner
+      // }
+      // outer()()
 
-function outer(){
-  var a=10;
-  function inner(){
-    console.log(a)
-  }
-  return inner
-}
-outer()()
+      console.log("1");
+      let sum = 0;
+    
+        function hlo() {
+          for (let i = 0; i < 5000000000; i++) {
+            sum = sum + i;
+          }
+          console.log(sum);
+        
+        console.log("4");
+      }
+      hlo();
+      console.log("3");
     </script>
   </body>
 </html>
