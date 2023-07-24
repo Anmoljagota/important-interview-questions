@@ -135,19 +135,59 @@
       // }
       // outer()()
 
-      console.log("1");
-      let sum = 0;
+      // console.log("1");
+      // let sum = 0;
     
-        function hlo() {
-          for (let i = 0; i < 5000000000; i++) {
-            sum = sum + i;
-          }
-          console.log(sum);
+      //   function hlo() {
+      //     for (let i = 0; i < 5000000000; i++) {
+      //       sum = sum + i;
+      //     }
+      //     console.log(sum);
         
-        console.log("4");
-      }
-      hlo();
-      console.log("3");
+      //   console.log("4");
+      // }
+      // hlo();
+      // console.log("3");
+      //HOISING IN JS
+      
+// var a=10
+// let a=10
+// function k(){
+//   var a=10;
+//   // console.log("hlo")
+//   console.log(a)
+// }
+// k()
+// {
+//   let b=20;
+//   // console.log("leo")
+//   console.log(b)
+// }
+// var a=10;
+// var fn=function (){
+//   var a=20
+//   console.log(a)
+// }
+// fn()
+
+// let persom={
+//   name:"anmol",
+//   print:function(){
+//     console.log(`hii ${this.name}`)
+//   }
+// }
+// newperson=persom.print;
+// newperson.call(persom)
+// let arr=["2","5","8","9","12","18"]
+// for(let keys of arr){
+//   console.log(keys)
+// }
+
+let arr=[1,2,3,4,5,6,7,8,9]
+const updatedarr=arr.map((ele)=>{
+  return ele>2
+})
+
     </script>
   </body>
 </html>

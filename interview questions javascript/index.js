@@ -460,3 +460,21 @@
 // let y=x.join("-")
 // let z=y.replaceAll("-","")
 // console.log(z)
+
+// const myPromise = new Promise((resolve, reject) => {
+//     setTimeout(() => resolve("Resolved!"), 2000);
+//   });
+//   console.log("Start");
+//   myPromise.then((data) => console.log(data));
+//   console.log("End");
+
+
+
+let arr=[1,2,3,4,5,6,7,8,9]
+arr.map((ele)=>{
+  // console.log(ele>2)
+})
+let arr1=[1,2,3,4,5,6,7,8,9]
+arr.filter((ele)=>{
+  console.log(ele>2)
+})

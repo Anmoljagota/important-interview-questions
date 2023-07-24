@@ -18,3 +18,33 @@ of a dispacher .
 2.REDUCER=>Reducer is a pure function that contains a initial state and action which is comming from a action . and according to this action type 
 reducer change the state and pass to the store 
 3.STORE=>store contains all the state and according to the updation made by a reducer it will change the ui
+
+4Q=>what is a server side rendering(SSR) and what is a client side rendering(CSR), what is the difference between them .
+ans=>
+Server-side rendering (SSR) and client-side rendering (CSR) are two different approaches to rendering web applications, including those built with React.
+
+Server-Side Rendering (SSR):
+Server-side rendering is a technique where the initial rendering of the web page is performed on the server, and the fully rendered HTML is sent to the client's browser. In SSR, the server generates the complete HTML page, including the content and the initial state of the application. The client's browser receives this pre-rendered HTML, and any associated JavaScript and CSS files, which are used for interactivity and further updates.
+Advantages of Server-Side Rendering:
+
+Improved initial load time: Users see content faster as the rendered HTML is sent immediately.
+SEO-friendly: Search engine crawlers can easily index the content since it's already in the HTML.
+Accessibility: Users with disabled JavaScript can still access the content.
+Client-Side Rendering (CSR):
+Client-side rendering, on the other hand, is the traditional approach used in React applications. The initial HTML page is minimal, often just containing a container element where the React application will be mounted. The bulk of the UI construction and rendering happens on the client's browser through JavaScript. The JavaScript fetches data and constructs the Virtual DOM, which is then used to update the actual DOM and display the user interface.
+Advantages of Client-Side Rendering:
+
+Rich interactivity: The application can respond to user actions without full page reloads, creating a smoother user experience.
+Dynamic updates: Components can update their views efficiently without requiring full page reloads.
+Code splitting: Only the necessary components are loaded, reducing the initial payload and improving performance.
+Key Differences between SSR and CSR:
+
+Initial load time: SSR typically has a better initial load time since the server sends pre-rendered HTML, whereas CSR requires additional time to fetch and execute JavaScript before rendering.
+
+SEO: SSR is more SEO-friendly as search engines can easily read the pre-rendered HTML, while CSR might require extra effort to ensure proper indexing.
+
+Performance on slow devices: SSR performs better on devices with limited resources or slow internet connections since more rendering work is done on the server.
+
+Interactivity: CSR generally offers smoother interactivity as the application becomes dynamic after the initial load and can respond to user actions quickly.
+
+In summary, SSR provides faster initial loading and better SEO, but CSR offers more dynamic interactivity. The choice between SSR and CSR depends on the specific requirements and goals of the web application. Some applications might even use a hybrid approach, employing both SSR and CSR to leverage their respective strengths.

@@ -140,3 +140,12 @@ if (typeof EventSource !== "undefined") {
 } else {
   // No server-sent events supported
 }
+
+11q=>Event Loop in javascript.
+ans=>Event loop is a fundamental concept of a javascript which allows the developer to run a code asycronous way . a javascript is
+a signle treaded language it means that it run a code line by line . but there is some web api's that take some time to run 
+because of its single treaded if it takes this web api's as a syncronus way then the performance of the application is quite 
+low . to make it as a async js comes up with a event loop . there is only a one call stack where all the code run 
+if there is some web api taking a time then it will go to the call back queue and rest of the code still run side by side 
+here the concept of event loop come event loop contineously check the call stack and the call back queue if there is some api 
+in the call back queue and the call stack is empty the it push that api in the call stack .
