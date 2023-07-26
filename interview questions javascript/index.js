@@ -422,7 +422,6 @@
 // person2store=watertap.bind(person2,"punjab");
 // person1store()
 
-
 //slice in js
 // let arr=[1,2,3,4,5]
 // let newarr=arr.slice(2,4)
@@ -432,7 +431,6 @@
 // let arr=[1,2,3,4,5]
 // arr.splice(1,1,6,7)
 // console.log(arr)
-
 
 //MEMOIZATION IN JS
 // const memoization_function=()=>{
@@ -445,7 +443,7 @@
 // else{
 //     console.log("calculating result");
 //     let newresult=value+20
-  
+
 //     catche[value]=newresult
 //     return newresult
 // }
@@ -454,7 +452,6 @@
 // const value=memoization_function()
 
 // console.log(value(20))
-
 
 // let x=[1,2,3]
 // let y=x.join("-")
@@ -468,13 +465,33 @@
 //   myPromise.then((data) => console.log(data));
 //   console.log("End");
 
+// let arr=[1,2,3,4,5,6,7,8,9]
+// arr.map((ele)=>{
+//   // console.log(ele>2)
+// })
+// let arr1=[1,2,3,4,5,6,7,8,9]
+// arr.filter((ele)=>{
+//   console.log(ele>2)
+// })
+// let promise = new Promise((res, rej) => {
+//   if (res) {
+//     return "success";
+//   } else {
+//     return "err";
+//   }
+// })
+//   .then((res) => {
+//     console.log("done");
+//   })
+//   .catch((err) => {
+//     console.log(err);
+//   });
 
 
-let arr=[1,2,3,4,5,6,7,8,9]
-arr.map((ele)=>{
-  // console.log(ele>2)
-})
-let arr1=[1,2,3,4,5,6,7,8,9]
-arr.filter((ele)=>{
-  console.log(ele>2)
-})
+async function AsyncHandle() {
+const res=await fetch("https://json-mock-orbitz.onrender.com/data");
+const data=await res.json()
+console.log("i am data",data)
+
+}
+AsyncHandle()
