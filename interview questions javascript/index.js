@@ -488,10 +488,21 @@
 //   });
 
 
-async function AsyncHandle() {
-const res=await fetch("https://json-mock-orbitz.onrender.com/data");
-const data=await res.json()
-console.log("i am data",data)
+// async function AsyncHandle() {
+// const res=await fetch("https://json-mock-orbitz.onrender.com/data");
+// const data=await res.json()
+// console.log("i am data",data)
 
+// }
+// AsyncHandle()
+
+// let arr=["1","2","3","4","5","6"]
+// let newarr=arr.toString()
+// console.log(typeof newarr)
+
+
+let obj={
+    name:"anmol",
+    role:"developer",
+    age:23
 }
-AsyncHandle()

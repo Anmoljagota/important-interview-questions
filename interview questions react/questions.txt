@@ -48,3 +48,14 @@ Performance on slow devices: SSR performs better on devices with limited resourc
 Interactivity: CSR generally offers smoother interactivity as the application becomes dynamic after the initial load and can respond to user actions quickly.
 
 In summary, SSR provides faster initial loading and better SEO, but CSR offers more dynamic interactivity. The choice between SSR and CSR depends on the specific requirements and goals of the web application. Some applications might even use a hybrid approach, employing both SSR and CSR to leverage their respective strengths.
+
+5q=>what is a react.strictmode in react.
+ans=>Strictmode in react is a developer tool which provide a one more deep level of for checking the potential problem.it is not any tool 
+or not any effect on ui and not any perform optimization techniques it provide a developers to write  clean and flexible code and used 
+only in developement face . if develoepers write any code which is against a reatc rules then it warns the developers that you are doing something
+wrong .
+for example=>when we render a group of elements in dom sometimes we forget to give a key to elements . keys are a uniquely identification
+of a elements which is used to update a virtual dom . it give a warning that key props are neccessary to provide 
+2)force update=>sometimes developers do a uneccessary forceupdate to render the component again which is also against the rule of
+ react.
+ 3)when we forget to give a dependency array in the useeffect , usecallback and usememo .   
