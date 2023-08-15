@@ -46,7 +46,7 @@ help of a promises;
  promise everything in developers hand 
  2)callback hell problem solved 
 
- 3q=>what is a call .
+ 3q=>what is a call.
  ans=>Call is a javascript built in function that allow to call a function with a specife this keyword and according to the argument 
  provided . it is a powerfull feature that change the context like the refernce of the this to those object where call method is set .
 

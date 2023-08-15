@@ -487,7 +487,6 @@
 //     console.log(err);
 //   });
 
-
 // async function AsyncHandle() {
 // const res=await fetch("https://json-mock-orbitz.onrender.com/data");
 // const data=await res.json()
@@ -500,9 +499,64 @@
 // let newarr=arr.toString()
 // console.log(typeof newarr)
 
+// let obj={
+//     name:"anmol",
+//     role:"developer",
+//     age:23
+// }
+// let ans=0;
+// const numbers = [4, 7, 2, 9, 5, 1, 8, 3, 6];
+// for(let i=0;i<numbers.length;i++){
+// ans=Math.max(ans,numbers[i]);
+// }
+// console.log(ans)
 
-let obj={
-    name:"anmol",
-    role:"developer",
-    age:23
+// let obj = {
+//   name: "anmol",
+//   class: "fw18",
+//   role: "mern developer",
+// };
+// let obj2 = {
+//   name: "tanya",
+//   class: "fw18",
+//   role: "react developer",
+// };
+// let obj3 = {
+//   name: "raksha",
+//   class: "fw18",
+//   role: "backend developer",
+// };
+
+// function callall(state, city) {
+//   console.log(
+//     `my name is ${this.name} and i belong to ${this.class} and my role is ${this.role} and state is ${state} and city is ${city}`
+//   );
+// }
+
+// const collect = callall.bind(obj3, "punjab", "chandigarh");
+
+
+//BINARY SEARCH
+function binary(arr,findnumber){
+console.log("hlo...");
+    let l=0;
+    let right=arr.length-1;
+while(l<=right){
+    let mid=Math.floor((l+right)/2);
+    console.log("midddd",mid)
+    if(arr[mid]===findnumber){
+        return mid;
+    }
+    else if(arr[mid]>findnumber){
+        right=mid-1;
+    }
+    else if(arr[mid]<findnumber){
+        l=mid+1;
+    }
 }
+return -1;
+}
+
+let arr=[1,4,6,10,100,115,125,130,150,200,210,230];
+let findnumber=10;
+console.log(binary(arr,findnumber))
