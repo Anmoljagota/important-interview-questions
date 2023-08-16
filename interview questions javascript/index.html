@@ -188,26 +188,84 @@
       //   return ele>2
       // })
 
-      async function AsyncHandle() {
-        const res = await fetch("https://json-mock-orbitz.onrender.com/data");
-        const data = await res.json();
-        console.log("i am data", data);
-        console.log("after async")
-      }
-      AsyncHandle();
-      console.log("after");
+      // async function AsyncHandle() {
+      //   const res = await fetch("https://json-mock-orbitz.onrender.com/data");
+      //   const data = await res.json();
+      //   console.log("i am data", data);
+      //   console.log("after async")
+      // }
+      // AsyncHandle();
+      // console.log("after");
 
-      function solvepromise() {
-        fetch("https://json-mock-orbitz.onrender.com/data")
-          .then((res) => {
-         return  res.json()
-          })
-          .then((res) => {
-            console.log(res);
-          });
-          console.log("after traditon")
-      }
-      solvepromise();
+      // function solvepromise() {
+      //   fetch("https://json-mock-orbitz.onrender.com/data")
+      //     .then((res) => {
+      //    return  res.json()
+      //     })
+      //     .then((res) => {
+      //       console.log(res);
+      //     });
+      //     console.log("after traditon")
+      // }
+      // solvepromise();
+
+// function Student(name,age,fees,id){
+// this.name=name;
+// this.age=age;
+// this.fees=fees;
+// this.id=id;
+// }
+
+// const StudentDetail=new Student("anmol",24,15000,1)
+// console.log(StudentDetail)
+
+// function ShowDetail(){
+//   console.log(`student name is ${this.name} and age is ${this.age} and fees pending is ${this.fees} and id is ${this.id}`);
+// }
+// ShowDetail.call(StudentDetail)
+
+
+//Prototype in js
+// let obj={
+//   name:"anmol"
+// }
+// let obj1=Object.create(obj)
+// console.log(obj1);
+
+let arr=[1,2,5,7,6,5]
+//map by prototype
+// let newarr=Array.prototype.Apnamap=function(func){
+//   let newarr=[]
+// for(let i=0;i<this.length;i++){
+//  let x=func(this[i]);
+//  newarr.push(x)
+// }
+// return newarr;
+
+// }
+// // console.log(arr)
+// let k=arr.Apnamap(function(item){
+//   return item>4;
+// })
+// console.log(k,"kkk")
+
+//filter by prototype
+// Array.prototype.Apnafilter=function(func){
+// let newarr=[];
+// for(let i=0;i<this.length;i++){
+//  let check= func(this[i],i,this)
+//  if(check){
+//   newarr.push(this[i])
+//  }
+// }
+// return newarr;
+// }
+// let n=arr.Apnafilter((item)=>{
+// return item>4;
+// })
+// console.log(n)
+
+
     </script>
   </body>
 </html>
