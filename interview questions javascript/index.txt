@@ -149,3 +149,11 @@ low . to make it as a async js comes up with a event loop . there is only a one 
 if there is some web api taking a time then it will go to the call back queue and rest of the code still run side by side 
 here the concept of event loop come event loop contineously check the call stack and the call back queue if there is some api 
 in the call back queue and the call stack is empty the it push that api in the call stack .
+
+12)question=>what is a prototype in heritence.
+ans=>Prototype inheritence is a mechanishm that allow one object to inherit properties and method of other object.A prototype in inheritence 
+refers to a object that server as a blueprint for other object.when we declare a any arr,string,object,function then the prototype
+is always attached with them . and we can get any of the method function from that prototype.
+when we try to get the value first js look in the original array value if that method is available in the original array then it 
+return that method else it will go to the prototype and try to find whether the function or method is avilable in the prototype
+we can also make our own custom prototype and use in anywhere in the js code for example give the example.

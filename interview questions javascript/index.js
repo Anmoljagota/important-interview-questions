@@ -537,26 +537,40 @@
 
 
 //BINARY SEARCH
-function binary(arr,findnumber){
-console.log("hlo...");
-    let l=0;
-    let right=arr.length-1;
-while(l<=right){
-    let mid=Math.floor((l+right)/2);
-    console.log("midddd",mid)
-    if(arr[mid]===findnumber){
-        return mid;
-    }
-    else if(arr[mid]>findnumber){
-        right=mid-1;
-    }
-    else if(arr[mid]<findnumber){
-        l=mid+1;
-    }
-}
-return -1;
-}
+// function binary(arr,findnumber){
+// console.log("hlo...");
+//     let l=0;
+//     let right=arr.length-1;
+// while(l<=right){
+//     let mid=Math.floor((l+right)/2);
+//     console.log("midddd",mid)
+//     if(arr[mid]===findnumber){
+//         return mid;
+//     }
+//     else if(arr[mid]>findnumber){
+//         right=mid-1;
+//     }
+//     else if(arr[mid]<findnumber){
+//         l=mid+1;
+//     }
+// }
+// return -1;
+// }
 
-let arr=[1,4,6,10,100,115,125,130,150,200,210,230];
-let findnumber=10;
-console.log(binary(arr,findnumber))
+// let arr=[1,4,6,10,100,115,125,130,150,200,210,230];
+// let findnumber=10;
+// console.log(binary(arr,findnumber))
+
+for(var i=0;i<3;i++){
+    setTimeout(()=>{
+        fn(i)
+    })
+}
+for(let i=0;i<3;i++){
+    setTimeout(()=>{
+        fn(i)
+    })
+}
+function fn(i){
+    console.log(i)
+}

@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <p class="checking"></p>
+    <h1>i will definately run</h1>
+    <script>
+      class User {
+        constructor(n, a) {
+          this.name = n;
+          this.age = a;
+        }
+
+        Signin(username, email, password) {
+          const isValidtae =
+            this.#isname(username) &&
+            this.#isemail(email) &&
+            this.#ispassword(password);
+          if (isValidtae) {
+            this.username = username;
+            this.password = password;
+            console.log("user register successfully");
+          } else {
+            console.log("some error");
+          }
+        }
+        #isname(username) {
+          if (username.length > 2) {
+            return true;
+          }
+        }
+        #isemail(email) {
+          if (email.length > 5) {
+            return true;
+          }
+        }
+        #ispassword(password) {
+          if (password.length > 1) {
+            return true;
+          }
+        }
+      }
+      class Student extends User {
+        constructor(name, age) {
+          super(name, age);
+          this.SubmitAssignment = 0;
+        }
+        Submitassignment() {
+          this.SubmitAssignment++;
+        }
+      }
+
+      class Admin extends User {
+        constructor(name, age) {
+          super(name, age);
+        }
+      }
+      const S1 = new Admin("anmol", 24);
+
+      // S1.Signin("anmol","anmoljagota08@gmail.com","12345")
+      console.log(S1);
+    </script>
+  </body>
+</html>
